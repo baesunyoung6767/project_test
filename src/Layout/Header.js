@@ -14,11 +14,15 @@ import MenuIcon from '@mui/icons-material/Menu';
 import Toolbar from '@mui/material/Toolbar';
 import Typography from '@mui/material/Typography';
 import Button from '@mui/material/Button';
+import Link from '@material-ui/core/Link';
+import { useNavigate } from 'react-router';
 
 const drawerWidth = 240;
 const navItems = ['Main', 'Resume', 'Projects', 'Contact'];
 
-function Header(props) {
+function Header(props) {  
+  let navigate = useNavigate();
+  
   const { window } = props;
   const [mobileOpen, setMobileOpen] = React.useState(false);
 

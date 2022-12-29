@@ -3,6 +3,7 @@ import Grid from '@mui/material/Grid';
 import { styled } from '@mui/material/styles';
 import Paper from '@mui/material/Paper';
 import Button from '@mui/material/Button';
+import { AiOutlineMail, AiOutlineFileText, AiOutlineLaptop } from "react-icons/ai";
 
 function main() {
     return(
@@ -31,14 +32,17 @@ function main() {
                 <div className="main2_item">
                     <Grid container spacing={3}>
                         <Grid item xs={4}>
+                            <div><AiOutlineFileText className='main2_icon'/></div>
                             <Button variant="contained" style={{backgroundColor: '#eafa3a', color: 'black'}}>RESUME</Button>
                             <div className="main2_item_content">저의 이력서입니다<br/>공모전, 대외활동, 교내활동 등 확인하실 수 있습니다</div>
                         </Grid>
                         <Grid item xs={4}>
+                            <div><AiOutlineLaptop className='main2_icon'/></div>
                             <Button variant="contained" style={{backgroundColor: '#eafa3a', color: 'black'}}>PROJECTS</Button>
                             <div className="main2_item_content">지금까지 진행했던 프로젝트입니다</div>
                         </Grid>
                         <Grid item xs={4}>
+                            <div><AiOutlineMail className='main2_icon'/></div>
                             <Button variant="contained" style={{backgroundColor: '#eafa3a', color: 'black'}}>CONTACT</Button>
                             <div className="main2_item_content">궁금하신 점이 있다면 해당 페이지에서<br/>이메일을 통해 연락주세요</div>
                         </Grid>
