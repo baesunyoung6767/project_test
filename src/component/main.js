@@ -4,15 +4,58 @@ import { styled } from '@mui/material/styles';
 import Paper from '@mui/material/Paper';
 import Button from '@mui/material/Button';
 import { AiOutlineMail, AiOutlineFileText, AiOutlineLaptop } from "react-icons/ai";
+import { Swiper, SwiperSlide } from "swiper/react";
+import React, { useRef, useState } from "react";
+import { Autoplay, EffectFade, Navigation, Pagination } from "swiper";
+import 'swiper/css';
+import 'swiper/css/navigation';
+import 'swiper/css/pagination';
+import 'swiper/css/scrollbar';
 
 function main() {
+    const items = [
+        { src: "img/main_img1.jpg" },
+        { src: "img/main_img2.jpg" },
+        { src: "img/main_img3.jpg" },
+        { src: "img/main_img4.jpg" },
+    ];
+
+    const swiperStyle = {
+        position : "relative",
+        width : "300px",
+        height : "400px",
+    };
+
     return(
         <>
             <div className="main1">
                 <div className="main1_item">
                     <Grid container spacing={2}>
                         <Grid item xs={5}>
-                            <div style={{marginRight:'30px', width : '300px'}}> 이미지 넣을 곳</div>
+                            <div style={{marginRight:'50px', width : '300px'}}>
+                            <Swiper
+                                style={swiperStyle}
+                                effect={"fade"}
+                                autoplay={{
+                                delay: 2000,
+                                disableOnInteraction: false,
+                                }}
+                                pagination={{
+                                clickable: true,
+                                }}
+                                modules={[Navigation, EffectFade, Pagination,Autoplay]}
+                                className="mySwiper"
+                                loop={true}
+                            >
+                                {items.map((item, idx) => {
+                                return (
+                                    <SwiperSlide key={idx}>
+                                    <img src={item.src} style={{width:"300px", height:"400px"}}/>
+                                    </SwiperSlide>
+                                );
+                                })}
+                            </Swiper>
+                            </div>
                         </Grid>
                         <Grid item xs={5}>
                             <div style={{marginLeft:'30px', width : '500px'}}>

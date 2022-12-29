@@ -18,7 +18,7 @@ import Link from '@material-ui/core/Link';
 import { useNavigate } from 'react-router';
 
 const drawerWidth = 240;
-const navItems = ['Main', 'Resume', 'Projects', 'Contact'];
+const navItems = ['main', 'resume', 'projects', 'contact'];
 
 function Header(props) {  
   let navigate = useNavigate();
@@ -63,7 +63,7 @@ function Header(props) {
           </IconButton>
           <Box sx={{ display: { xs: 'none', sm: 'block' } }}>
             {navItems.map((item) => (
-              <Button key={item} sx={{ color: '#fff' }}>
+              <Button key={item} sx={{ color: '#fff' }} onClick={()=>{navigate(`/${item}`);}}>
                 {item}
               </Button>
             ))}
