@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap');
+.projects {
+    background-color: #DCDCDC;
+    height: 900px;
+}
+
+.projects_title {
+    padding-top: 120px;
+    padding-left: 80px;
+    font-size: 40px;
+    font-weight: bold;
+    font-family: 'DM Serif Display', serif;
+}
+
+.projects_content {
+    padding: 100px;
+    overflow-x: scroll;
+}
+
+.projects_card {
+ margin: 0px 10px 0px 0px;
+ float: left;   
+ height: 380px;
+}
+
+.projects_card_content {
+    font-family: 'Nanum Gothic', sans-serif;
+}
