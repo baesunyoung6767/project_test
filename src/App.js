@@ -3,6 +3,7 @@ import Footer from './Layout/Footer'
 import Main from './component/main'
 import Resume from './component/resume'
 import Projects from './component/projects'
+import DetailProject from './component/detail_project'
 
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
 
@@ -16,6 +17,7 @@ function App() {
           <Route path='/main' element={<Main/>}/>
           <Route path='/resume' element={<Resume/>}/>
           <Route path='/projects' element={<Projects/>}/>
+          {/* <Route path='/detail_project/:id' element={<DetailProject/>}/> */}
         </Routes>
         <Footer/>
       </Router>

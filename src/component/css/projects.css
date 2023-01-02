@@ -13,15 +13,34 @@
     font-family: 'DM Serif Display', serif;
 }
 
+
 .projects_content {
     padding: 100px;
+    display: flex;
     overflow-x: scroll;
+    overflow-y: hidden;
+    margin: 15px;
+}
+
+.projects_content::-webkit-scrollbar {
+    height: 7px;
+}
+
+.projects_content::-webkit-scrollbar-thumb{
+    background-color: black;
+    border-radius: 50px;
+    border: 2px solid transparent;
+    height: 10%;
+}
+
+.projects_content::-webkit-scrollbar-track {
+    background-color: transparent;
 }
 
 .projects_card {
- margin: 0px 10px 0px 0px;
- float: left;   
- height: 380px;
+    margin: 0px 10px 0px 0px;
+    height: 380px;
+    width: 500px;
 }
 
 .projects_card_content {
