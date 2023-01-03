@@ -23,7 +23,7 @@ function main() {
     const swiperStyle = {
         position : "relative",
         width : "300px",
-        height : "400px",
+        height : "350px",
     };
 
     return(
@@ -36,9 +36,10 @@ function main() {
                             <Swiper
                                 style={swiperStyle}
                                 effect={"fade"}
+                                slidesPerView={4}
                                 autoplay={{
                                 delay: 2000,
-                                disableOnInteraction: false,
+                                disableOnInteraction:false,
                                 }}
                                 pagination={{
                                 clickable: true,
@@ -50,7 +51,7 @@ function main() {
                                 {items.map((item, idx) => {
                                 return (
                                     <SwiperSlide key={idx}>
-                                    <img src={item.src} style={{width:"300px", height:"400px"}}/>
+                                    <img src={item.src} style={{width:"300px", height:"350px"}}/>
                                     </SwiperSlide>
                                 );
                                 })}
@@ -76,17 +77,17 @@ function main() {
                     <Grid container spacing={3}>
                         <Grid item xs={4}>
                             <div><AiOutlineFileText className='main2_icon'/></div>
-                            <Button variant="contained" style={{backgroundColor: '#eafa3a', color: 'black'}}>RESUME</Button>
+                            <Button variant="outlined" style={{border:'none'}}>RESUME</Button>
                             <div className="main2_item_content">저의 이력서입니다<br/>공모전, 대외활동, 교내활동 등 확인하실 수 있습니다</div>
                         </Grid>
                         <Grid item xs={4}>
                             <div><AiOutlineLaptop className='main2_icon'/></div>
-                            <Button variant="contained" style={{backgroundColor: '#eafa3a', color: 'black'}}>PROJECTS</Button>
+                            <Button variant="outlined" style={{border:'none'}}>PROJECTS</Button>
                             <div className="main2_item_content">지금까지 진행했던 프로젝트입니다</div>
                         </Grid>
                         <Grid item xs={4}>
                             <div><AiOutlineMail className='main2_icon'/></div>
-                            <Button variant="contained" style={{backgroundColor: '#eafa3a', color: 'black'}}>CONTACT</Button>
+                            <Button variant="outlined" style={{border:'none'}}>CONTACT</Button>
                             <div className="main2_item_content">궁금하신 점이 있다면 해당 페이지에서<br/>이메일을 통해 연락주세요</div>
                         </Grid>
                     </Grid>
