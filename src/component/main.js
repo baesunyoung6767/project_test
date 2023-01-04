@@ -11,65 +11,79 @@ import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import 'swiper/css/scrollbar';
+import Box from '@mui/material/Box';
 
 function main() {
-    const items = [
-        { src: "img/main_img1.jpg" },
-        { src: "img/main_img2.jpg" },
-        { src: "img/main_img3.jpg" },
-        { src: "img/main_img4.jpg" },
-    ];
+    const introText = document.querySelectorAll("span");
 
-    const swiperStyle = {
-        position : "relative",
-        width : "300px",
-        height : "350px",
+    window.onload = () => {
+        let timer = 100;
+        introText.forEach((item) => {
+            item.style.animation = `fade 500ms ${(timer += 50)}ms forwards`;
+        });
     };
+
 
     return(
         <>
-            <div className="main1">
-                <div className="main1_item">
-                    <Grid container spacing={2}>
-                        <Grid item xs={5}>
-                            <div style={{marginRight:'50px', width : '300px'}}>
-                            <Swiper
-                                style={swiperStyle}
-                                effect={"fade"}
-                                slidesPerView={4}
-                                autoplay={{
-                                delay: 2000,
-                                disableOnInteraction:false,
-                                }}
-                                pagination={{
-                                clickable: true,
-                                }}
-                                modules={[Navigation, EffectFade, Pagination,Autoplay]}
-                                className="mySwiper"
-                                loop={true}
-                            >
-                                {items.map((item, idx) => {
-                                return (
-                                    <SwiperSlide key={idx}>
-                                    <img src={item.src} style={{width:"300px", height:"350px"}}/>
-                                    </SwiperSlide>
-                                );
-                                })}
-                            </Swiper>
-                            </div>
-                        </Grid>
-                        <Grid item xs={5}>
-                            <div style={{marginLeft:'30px', width : '500px'}}>
-                                <h2 className="main1_title">Hello!</h2>
-                                <h3>Bae Sun Young</h3>
+            <div style={{width:"100%", height:"700px", backgroundImage:'url(img/main.jpg)'}}>
+            <div>
+                <p>
+                    <span>G</span>
+                    <span>L</span>
+                    <span>O</span>
+                    <span>B</span>
+                    <span>A</span>
+                    <span>L</span>
+                </p>
+                <p>
+                    <span>R</span>
+                    <span>E</span>
+                    <span>T</span>
+                    <span>A</span>
+                    <span>I</span>
+                    <span>L</span>
+                    <span>&nbsp</span>
+                    <span>T</span>
+                    <span>E</span>
+                    <span>C</span>
+                    <span>H</span>
+                </p>
+                <p>
+                    <span>L</span>
+                    <span>E</span>
+                    <span>A</span>
+                    <span>D</span>
+                    <span>E</span>
+                    <span>R</span>
+                </p>
+            </div>
+            </div>
+            <div style={{width:'100%', height:'800px', alignItems:'center', display:'flex', backgroundColor:'#000033'}}>
+                <div className='main1'>
+                    <Box sx={{ flexGrow: 1 }}>
+                        <Grid container spacing={2} columns={16} className='main1_gird_Pitem'>
+                            <Grid item xs={8} className='main1_grid_item'>
+                                <Grid container spacing={1}>
+                                    <Grid item xs={12}>
+                                        <img src="img/main1.png" style={{marginTop:'20px', width:"250px", height:"100%"}}/>
+                                    </Grid>
+                                    <Grid item xs={12}>
+                                        <img src="img/main2.jpg" style={{marginTop:'40px', width:"350px", height:"130px"}}/>
+                                    </Grid>
+                                </Grid>
+                            </Grid> 
+                            <Grid item xs={8} style={{alignItems:'center'}}>
+                                <div className="main1_title">Hello</div> 
+                                <div>Bae Sun Young</div>
                                 <p className="main1_item_content">
-                                    안녕하세요 저는 동의대학교 컴퓨터공학과 학생입니다 <br/>
-                                    웹 개발자를 목표로, 서버(node.js / springboot)와 클라이언트(react)를 공부하고 있습니다<br/>
-                                    저의 이력서와 포트폴리오가 궁금하시다면 아래 버튼을 클릭해주세요
+                                    안녕하세요 저는 동의대학교 컴퓨터공학과 학생입니다. <br/>
+                                    웹 개발자를 목표로, 서버(node.js / springboot)와 클라이언트(react)를 공부하고 있습니다.<br/>
+                                    저의 이력서와 포트폴리오가 궁금하시다면 아래 버튼을 클릭해주세요!
                                 </p>
-                            </div>
+                            </Grid>
                         </Grid>
-                    </Grid>
+                    </Box>
                 </div>
             </div>
             <div className="main2">
