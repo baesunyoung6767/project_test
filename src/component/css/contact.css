@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap');
 
 .contact {
-    background-color: #DCDCDC;
+    background-color: #000033;
     height: 1200px;
 }
 
@@ -13,6 +13,7 @@
     font-weight: bold;
     font-family: 'DM Serif Display', serif;
     margin-bottom: 100px;
+    color:white;
 }
 
 .contact_form {

@@ -14,50 +14,10 @@ import 'swiper/css/scrollbar';
 import Box from '@mui/material/Box';
 
 function main() {
-    const introText = document.querySelectorAll("span");
-
-    window.onload = () => {
-        let timer = 100;
-        introText.forEach((item) => {
-            item.style.animation = `fade 500ms ${(timer += 50)}ms forwards`;
-        });
-    };
-
-
     return(
         <>
-            <div style={{width:"100%", height:"700px", backgroundImage:'url(img/main.jpg)'}}>
-            <div>
-                <p>
-                    <span>G</span>
-                    <span>L</span>
-                    <span>O</span>
-                    <span>B</span>
-                    <span>A</span>
-                    <span>L</span>
-                </p>
-                <p>
-                    <span>R</span>
-                    <span>E</span>
-                    <span>T</span>
-                    <span>A</span>
-                    <span>I</span>
-                    <span>L</span>
-                    <span>&nbsp</span>
-                    <span>T</span>
-                    <span>E</span>
-                    <span>C</span>
-                    <span>H</span>
-                </p>
-                <p>
-                    <span>L</span>
-                    <span>E</span>
-                    <span>A</span>
-                    <span>D</span>
-                    <span>E</span>
-                    <span>R</span>
-                </p>
-            </div>
+            <div style={{width:"100%", height:"700px", backgroundImage:'url(img/main.jpg)', textAlign:'right'}}>
+            <div className='main_text'>portfolio</div>
             </div>
             <div style={{width:'100%', height:'800px', alignItems:'center', display:'flex', backgroundColor:'#000033'}}>
                 <div className='main1'>

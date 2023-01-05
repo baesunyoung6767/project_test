@@ -17,7 +17,7 @@ const title_content = [
     [3,"헬스장 관리 애플리케이션", "헬스장 관리를 용이하게 하기 위해 회원 등록 및 관리뿐만 아니라 회원권, PT등 운동 예약 관리까지 구현한 관리자용 애플리케이션이다."],
     [4,"CMS기반 워드프레스 활용 웹 구현", "현재 많은 사람들에게 각광받고 있는 CMS기반 워드프레스를 이용하여 자기 소개 및 팀 소개, 최종 프로젝트 발표 내용을 웹으로 구현하였다."],
     [5,"메타버스 활용 음성 기반 블록 히트 모션 감지", "시각장애인도 다양한 기능을 즐길 수 있도록 기울기 센서와 tts를 활용하여 메타버스 속에서 이벤트가 발생할 때마다 음성이 출력되도록 구현하였다."],
-    [6,"주거 침입 범죄예방을 위한 안드로이드 연동 스마트 도어락", "주거 침입 범죄를 예방하고자 스마트폰 앱과 연동하여 도어락 제어가 가능하도록 하였으며 카메라 인식 기능을 탑재하여 보안을 강화하였다."]
+    [6,"주거 침입 범죄예방을 위한 안드로이드 연동 도어락", "주거 침입 범죄를 예방하고자 스마트폰 앱과 연동하여 도어락 제어가 가능하도록 하였으며 카메라 인식 기능을 탑재하여 보안을 강화하였다."]
 ];
 
 function useProjects() {
@@ -28,9 +28,9 @@ function useProjects() {
             <div>
             <Card sx={{ maxWidth: 345 }} className='projects_card' key={item[0]}>
                 <CardMedia
-                    sx={{ height: 140 }}
-                    image="/static/images/cards/contemplative-reptile.jpg"
-                    title="green iguana"
+                    sx={{ height: 150 }}
+                    // image="/static/images/cards/contemplative-reptile.jpg"
+                    // title="green iguana"
                 />
                 <CardContent>
                     <Typography gutterBottom variant="h5" component="div" className="projects_card_content">

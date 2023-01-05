@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap');
 .projects {
-    background-color: #DCDCDC;
+    background-color: #000033;
     height: 900px;
 }
 
@@ -11,6 +11,7 @@
     font-size: 40px;
     font-weight: bold;
     font-family: 'DM Serif Display', serif;
+    color: white;
 }
 
 
@@ -27,7 +28,7 @@
 }
 
 .projects_content::-webkit-scrollbar-thumb{
-    background-color: black;
+    background-color: white;
     border-radius: 50px;
     border: 2px solid transparent;
     height: 10%;
