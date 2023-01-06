@@ -10,6 +10,7 @@ _백엔드 소스코드는 따로 repository 생성 예정_
 ## 구현된 페이지 소개
 1. 메인 화면
   + 간단한 자기소개와 다른 페이지로 이동 가능한 버튼 구현
+  + 눈 내리는 효과 참고 : https://codepen.io/matchboxhero/pen/JrLJeb?editors=1100
 2. 이력서
   + 연도별 활동 정리
 3. 프로젝트
