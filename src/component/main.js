@@ -12,6 +12,7 @@ import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import 'swiper/css/scrollbar';
 import Box from '@mui/material/Box';
+import Snow from './snow'
 
 function main() {
     return(
@@ -19,7 +20,8 @@ function main() {
             <div style={{width:"100%", height:"700px", backgroundImage:'url(img/main.jpg)', textAlign:'right'}}>
             <div className='main_text'>portfolio</div>
             </div>
-            <div style={{width:'100%', height:'800px', alignItems:'center', display:'flex', backgroundColor:'#000033'}}>
+            <div style={{width:'100%', height:'800px', alignItems:'center', display:'flex', backgroundColor:'#000033', position:'relative', overflow:'hidden'}}>
+                <Snow></Snow>
                 <div className='main1'>
                     <Box sx={{ flexGrow: 1 }}>
                         <Grid container spacing={2} columns={16} className='main1_gird_Pitem'>

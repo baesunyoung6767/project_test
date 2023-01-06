@@ -4,6 +4,7 @@ import Box from '@mui/material/Box';
 import Grid from '@mui/material/Grid';
 import Button from '@mui/material/Button';
 import emailjs from '@emailjs/browser';
+import Snow from './snow'
 
 function useContact() {
   
@@ -23,6 +24,7 @@ function useContact() {
     return(
         <div className='contact'>
             <div className='contact_title'>Contact</div>
+            <Snow></Snow>
             <div>
                 <div className='contact_form'>
                     <Box sx={{ flexGrow: 1 }}>

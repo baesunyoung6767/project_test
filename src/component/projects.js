@@ -10,6 +10,7 @@ import { ScrollMenu, VisibilityContext } from 'react-horizontal-scrolling-menu';
 import ScrollHorizontal from 'react-scroll-horizontal';
 import { Container } from '@mui/system';
 import { useNavigate } from 'react-router';
+import Snow from './snow'
 
 const title_content = [
     [1,"재가 요양 서비스 대상자 스마트 약통", "재가요양 서비스 대상자들의 약 복용을 돕기 위해 진행된 프로젝트이다. 잠금을 설치하여 약 복용 시간에만 해제가 되며 무게 판별을 통해 정확한 약 복용 여부를 판별한다."], 
@@ -52,6 +53,7 @@ function useProjects() {
     return(
         <div className='projects'>
             <div className='projects_title'>Projects</div>
+            {/* <Snow></Snow> */}
             <div className='projects_content'>
                     {card_item}
             </div>

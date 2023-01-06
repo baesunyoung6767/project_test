@@ -3,6 +3,9 @@
 .projects {
     background-color: #000033;
     height: 900px;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
 }
 
 .projects_title {

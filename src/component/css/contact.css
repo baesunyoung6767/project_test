@@ -4,6 +4,9 @@
 .contact {
     background-color: #000033;
     height: 1200px;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
 }
 
 .contact_title {
@@ -12,7 +15,7 @@
     font-size: 40px;
     font-weight: bold;
     font-family: 'DM Serif Display', serif;
-    margin-bottom: 100px;
+    /* margin-bottom: 100px; */
     color:white;
 }
 
@@ -21,6 +24,7 @@
     width: 600px;
     background-color: white;
     margin: 0 auto;
+    margin-top: 100px;
     padding: 130px 100px 100px 100px;
     text-align: center;
 }

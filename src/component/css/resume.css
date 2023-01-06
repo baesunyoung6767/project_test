@@ -3,7 +3,10 @@
 
 .resume {
     background-color: #000033;
-    height: 1500px;
+    height: 100%;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
 }
 
 .resume_title {
