@@ -20,7 +20,7 @@ function main() {
             <div style={{width:"100%", height:"700px", backgroundImage:'url(img/main.jpg)', textAlign:'right'}}>
             <div className='main_text'>portfolio</div>
             </div>
-            <div style={{width:'100%', height:'800px', alignItems:'center', display:'flex', backgroundColor:'#000033', position:'relative', overflow:'hidden'}}>
+            <div style={{width:'100%', height:'800px', alignItems:'center', display:'flex', backgroundColor:'#000033', position:'relative', overflow:'hidden', zIndex:'3'}}>
                 <Snow></Snow>
                 <div className='main1'>
                     <Box sx={{ flexGrow: 1 }}>

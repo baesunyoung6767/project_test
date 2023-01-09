@@ -54,6 +54,8 @@
     background-color: white;
     margin: auto;
     border-radius: 15px;
+    position: relative;
+    overflow: hidden;
 }
 
 .main1_title{
