@@ -35,7 +35,7 @@ function main() {
                 </Grid>
                 <Grid item xs={4}>
                     <Item1> <AiOutlineGithub className='icon'/> github</Item1>
-                    <Item2> baesunyoung6767 </Item2>
+                    <Item2> https://github.com/baesunyoung6767 </Item2>
                 </Grid>
             </Grid>
         </div>

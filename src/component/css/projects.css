@@ -50,3 +50,9 @@
 .projects_card_content {
     font-family: 'Nanum Gothic', sans-serif;
 }
+
+
+.project_github_icon {
+    margin-left: 15px;
+    font-size: 22px;
+}
